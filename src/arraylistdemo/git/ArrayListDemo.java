@@ -16,7 +16,8 @@ public class ArrayListDemo {
 
 	        // 1 2 3 4 5 75
 
-
+//print Array list
+	        printArrayList(arrayList);
 	        // Access element
 	        int element = arrayList.get(1);
 	        System.out.println(element);
@@ -38,5 +39,14 @@ public class ArrayListDemo {
 	            System.out.println(listElement);
 	        }
 		
+	}
+	//Function to print the array list
+	public static void printArrayList(ArrayList<Integer> numbers)
+	{
+		System.out.println("***********************************");
+		System.out.println("ArrayList");
+		System.out.println("***********************************");
+		numbers.stream().forEach(n-> System.out.println(n));
+		System.out.println("***********************************");
 	}
 }
